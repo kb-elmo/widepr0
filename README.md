@@ -1,9 +1,11 @@
 # widepr0
 Make pr0gramm more widescreen friendly
 
-[Quick installation](https://github.com/kb-elmo/widepr0/raw/master/widepr0.user.js)
+[Quick installation](https://github.com/kb-elmo/widepr0/raw/master/widepr0.user.js) (requires Tampermonkey)
 
-Userscript for [Tampermonkey](https://www.tampermonkey.net/)
+---
+
+![preview](https://i.imgur.com/CWRjLOg.png)
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
