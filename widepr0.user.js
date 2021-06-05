@@ -44,8 +44,10 @@
 
     var g = document.createElement('script');
     var s = document.getElementsByTagName('script')[0];
-    g.text = 'CONFIG.LAYOUT.THUMBS_PER_ROW.MAX = 16;' +
-        "page_refresh = function() { if($('.main-message').text().indexOf('Das Bild wurde als') == -1 && $('.thumb').length > 0) $(window).resize(); else setTimeout(page_refresh, 50)}\r\n" +
-        'page_refresh();\r\n';
+    g.text = `
+    CONFIG.LAYOUT.THUMBS_PER_ROW.MAX = 16;
+    page_refresh = function() { if($('.main-message').text().indexOf('Das Bild wurde als') == -1 && $('.thumb').length > 0) $(window).resize(); else setTimeout(page_refresh, 50)};
+    page_refresh();
+    `
     s.parentNode.insertBefore(g, s);
 })();
