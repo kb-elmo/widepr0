@@ -21,7 +21,26 @@
         head.appendChild(style);
     }
 
-    addGlobalStyle('div.item-info {max-width: 1200px; margin: auto}\r\ndiv.item-comments {max-width: 1200px; margin: auto}');
+    addGlobalStyle(`
+    #head {
+        width: calc((15 * 4px) + (16 * 128px)) !important;
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    #head-content {
+        width: 1200px;
+        background-color: transparent;
+    }
+    div.item-info {
+        max-width: 1200px;
+        margin: auto;
+    }
+    div.item-comments {
+        max-width: 1200px;
+        margin: auto;
+    }`);
 
     var g = document.createElement('script');
     var s = document.getElementsByTagName('script')[0];
